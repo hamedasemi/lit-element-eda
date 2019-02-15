@@ -1,1 +1,2 @@
-# lit-element-event
+# LitElement Event
+An Event-driven Architecture for LitElement.
