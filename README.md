@@ -42,11 +42,11 @@ class DemoApp extends LitElement {
     sub(){ events.dispatch('sub') }
     add(){ events.dispatch('add') }
 
-    subHandler(event) {
+    subHandler() {
         this.state = { ...this.state, number: --this.state.number }
     }
 
-    addHandler(event) {
+    addHandler() {
         this.state = { ...this.state, number: ++this.state.number }
     }
 }
