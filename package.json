@@ -1,31 +1,32 @@
 {
-  "name": "lit-element-event",
+  "name": "lit-element-eda",
   "version": "0.0.0",
   "description": "An Event-driven Architecture for LitElement.",
-  "main": "lit-element-event.js",
+  "main": "lit-element-eda.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hamedasemi/lit-element-event.git"
+    "url": "git+https://github.com/hamedasemi/lit-element-eda.git"
   },
   "keywords": [
     "lit",
     "element",
     "event",
-    "event-driven",
+    "driven",
     "architecture",
+    "event-driven",
     "event-driven architecture",
     "eda",
     "lit-element",
-    "lit-element-event",
+    "lit-element-eda",
     "javascript"
   ],
   "author": "hamedabolghasemi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hamedasemi/lit-element-event/issues"
+    "url": "https://github.com/hamedasemi/lit-element-eda/issues"
   },
-  "homepage": "https://github.com/hamedasemi/lit-element-event#readme"
+  "homepage": "https://github.com/hamedasemi/lit-element-eda#readme"
 }
