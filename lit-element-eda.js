@@ -30,7 +30,7 @@ class EventEmitter {
         return this
     }
 
-    emit(event, ...args) {
+    dispatch(event, ...args) {
         const listeners = this.events.get(event)
         if (listeners) {
             for (let listener of listeners) {
