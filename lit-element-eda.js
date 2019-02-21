@@ -1,46 +1,46 @@
 class EventEmitter {
     constructor() {
-        this.events = this.events || new Map()
+        this.events = this.events || new Map();
     }
 
     on(event, listener) {
         if (typeof listener !== 'function') {
-            throw new TypeError('The listener must be a function')
+            throw new TypeError('The listener must be a function');
         }
-        let listeners = this.events.get(event)
+        let listeners = this.events.get(event);
         if (!listeners) {
-            listeners = new Set()
-            this.events.set(event, listeners)
+            listeners = new Set();
+            this.events.set(event, listeners);
         }
-        listeners.add(listener)
-        return this
+        listeners.add(listener);
+        return this;
     }
 
     off(event, listener) {
         if (!arguments.length) {
-            this.events.clear()
+            this.events.clear();
         } else if (arguments.length === 1) {
-            this.events.delete(event)
+            this.events.delete(event);
         } else {
-            const listeners = this.events.get(event)
+            const listeners = this.events.get(event);
             if (listeners) {
-                listeners.delete(listener)
+                listeners.delete(listener);
             }
         }
-        return this
+        return this;
     }
 
     dispatch(event, ...args) {
-        const listeners = this.events.get(event)
+        const listeners = this.events.get(event);
         if (listeners) {
             for (let listener of listeners) {
-                listener.apply(this, args)
+                listener.apply(this, args);
             }
         }
-        return this
+        return this;
     }
 }
 
-let events = new EventEmitter()
+let events = new EventEmitter();
 
-export { events }
+export { events };
